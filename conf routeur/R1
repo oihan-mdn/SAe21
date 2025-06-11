@@ -1,0 +1,24 @@
+===== ROUTER 1=====
+ ROUTEUR 1 (central)
+
+enable
+configure terminal
+
+interface g0/0
+description lien_vers_router0
+ip address 10.0.0.1 255.255.255.252
+no shutdown
+
+interface g0/1
+description lien_vers_router1
+ip address 10.0.0.5 255.255.255.252
+no shutdown
+
+interface g0/2
+description vers_serveur
+ip address 192.168.105.201 255.255.255.248
+no shutdown
+
+ip route 192.168.105.0 255.255.255.192 10.0.0.2
+ip route 192.168.105.64 255.255.255.192 10.0.0.6
+ip route 192.168.105.128 255.255.255.192 10.0.0.2
