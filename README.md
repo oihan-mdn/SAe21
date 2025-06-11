@@ -1,6 +1,8 @@
 # 🌐 SAÉ21 – Construction d’un réseau informatique multisite pour CDS25
 
-Bienvenue dans le dépôt GitHub de notre projet **SAÉ21**, réalisé dans le cadre du BUT1 Réseaux & Télécommunications à l'IUT de [TON IUT].
+Bienvenue dans le dépôt GitHub de notre projet **SAÉ21**, réalisé dans le cadre du BUT1 Réseaux & Télécommunications à l'IUT de Blagnac.
+
+Projet composé de: Oihan Martin Dit Neuville, Hugo Diniz, Sarah Perez et Timéo Champigny
 
 > **Sujet** : Mise en place d’un réseau informatique pour une entreprise multisite fictive : **CDS25**
 
