@@ -1,6 +1,3 @@
-# SAe21
-
-
 # 🌐 SAÉ21 – Construction d’un réseau informatique multisite pour CDS25
 
 Bienvenue dans le dépôt GitHub de notre projet **SAÉ21**, réalisé dans le cadre du BUT1 Réseaux & Télécommunications à l'IUT de [TON IUT].
