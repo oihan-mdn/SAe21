@@ -6,7 +6,7 @@ Projet composé de: Oihan Martin Dit Neuville, Hugo Diniz, Sarah Perez et Timéo
 
 **Sujet** : Mise en place d’un réseau informatique pour une entreprise multisite fictive : **CDS25**
 
-## 📋 Cahier des charges
+## Cahier des charges
 
 L’entreprise est répartie sur 4 sites en France :
 
@@ -16,7 +16,6 @@ L’entreprise est répartie sur 4 sites en France :
 | Rennes          |                   24 |                 12 |                    4 |
 | Pointe-à-Pitre  |                   15 |                  7 |                    2 |
 | Limoges (siège) |                   96 |                 30 |                   12 |
-
 
 ### Objectifs techniques
 
@@ -28,11 +27,9 @@ L’entreprise est répartie sur 4 sites en France :
 - Téléphonie IP (SIP)  
 - Infrastructure testée sur Cisco Packet Tracer **et en TP**
 
----
+## Compétences mobilisées
 
-## 🧠 Compétences mobilisées
-
-| 📚 **Ressource** | 🛠️ **Compétence mobilisée**                                   |
+| **Ressource** | **Compétence mobilisée**                                   |
 | ---------------- | -------------------------------------------------------------- |
 | `R101` à `R103`  | Conception réseau local, adressage IP, VLANs                   |
 | `R201` à `R203`  | Routage statique, DHCP, DNS, SSH, services réseau              |
@@ -40,10 +37,7 @@ L’entreprise est répartie sur 4 sites en France :
 | `R210` / `R211`  | Communication technique & documentation structurée             |
 | `R115`           | Gestion de projet (diagramme de Gantt, répartition des tâches) |
 
-
----
-
-## 🧱 Architecture réseau
+## Architecture réseau
 
 - 4 routeurs principaux (1 par site)  
 - Liaisons inter-sites via réseau WAN (`10.0.X.0/30`)  
@@ -54,11 +48,9 @@ L’entreprise est répartie sur 4 sites en France :
   - VLAN 99 : Serveurs (DHCP/DNS/HTTP)  
 - Serveur centralisé à Limoges
 
----
+## Tests & preuves de concept
 
-## 🧪 Tests & preuves de concept
-
-| 🧪 **Test réalisé**                           | 🔍 **Résultat attendu**          | ⏳ **Statut** |
+| **Test réalisé**                           | **Résultat attendu**          | **Statut** |
 | --------------------------------------------- | -------------------------------- | ------------ |
 | Attribution DHCP par VLAN                     | IP dynamique dans chaque VLAN    | 🟡 En cours  |
 | Routage inter-sites (Ping Paris ↔ Limoges...) | Latence < 50ms                   | 🟡 En cours  |
@@ -68,8 +60,5 @@ L’entreprise est répartie sur 4 sites en France :
 | Téléphones IP avec DHCP + SIP                 | IP attribuée, communication SIP  | 🟡 En cours  |
 | Wi-Fi stagiaires (AP VLAN 10)                 | Connecté, IP reçue via DHCP      | 🟡 En cours  |
 
-
----
-
-## 📁 Contenu du dépôt
+## Contenu du dépôt
 
