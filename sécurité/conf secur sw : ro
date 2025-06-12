@@ -1,0 +1,31 @@
+ Sécurisation de base pour routeurs et switches Cisco
+ ----------------------------------------------------
+
+enable
+configure terminal
+
+Mot de passe mode privilégié (crypté)
+enable secret MonMotDePasseSecure
+
+Mot de passe console (accès physique)
+line console 0
+password MonMdpConsole
+login
+exit
+
+Mot de passe VTY (accès distant - Telnet uniquement)
+line vty 0 4
+password MonMdpVTY
+login
+exit
+
+Activation du cryptage des mots de passe en clair
+service password-encryption
+
+Message d'accueil (banner MOTD)
+banner motd #
+⚠️ ACCÈS RÉSERVÉ ⚠️
+Toute tentative d'accès non autorisée à cet équipement réseau
+sera enregistrée et poursuivie conformément aux règles de l'IUT.
+Seuls les administrateurs autorisés sont habilités à intervenir.
+#
