@@ -17,7 +17,7 @@ L’entreprise est répartie sur 4 sites en France :
 | Pointe-à-Pitre  |                   15 |                  7 |                    2 |
 | Limoges (siège) |                   96 |                 30 |                   12 |
 
-### Objectifs techniques
+## Objectifs techniques
 
 - Réseaux VLANs : stagiaires, salariés, VoIP, serveurs  
 - DHCP centralisé  
