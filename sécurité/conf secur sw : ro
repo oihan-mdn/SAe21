@@ -1,5 +1,5 @@
- Sécurisation de base pour routeurs et switches Cisco
- ----------------------------------------------------
+ Sécurisation complète pour routeurs et switches Cisco AVEC SSH
+ --------------------------------------------------------------
 
 enable
 configure terminal
@@ -13,14 +13,22 @@ password MonMdpConsole
 login
 exit
 
-Mot de passe VTY (accès distant - Telnet uniquement)
+Mot de passe VTY + SSH + login local
+username admin privilege 15 secret MonMdpAdmin
 line vty 0 4
-password MonMdpVTY
-login
+login local
+transport input ssh
 exit
 
-Activation du cryptage des mots de passe en clair
+Activer le chiffrement des mots de passe
 service password-encryption
+
+Configuration de SSH
+hostname RouteurSAE21
+ip domain-name cds25.local
+crypto key generate rsa
+1024
+ip ssh version 2
 
 Message d'accueil (banner MOTD)
 banner motd #
