@@ -6,18 +6,16 @@ Projet composé de: Oihan Martin Dit Neuville, Hugo Diniz, Sarah Perez et Timéo
 
 **Sujet** : Mise en place d’un réseau informatique pour une entreprise multisite fictive : **CDS25**
 
----
-
 ## 📋 Cahier des charges
 
 L’entreprise est répartie sur 4 sites en France :
 
-| 🌍 **Site**        | 👨‍🎓 **Stagiaires** | 🧑‍💼 **Salariés** | ☎️ **Téléphones IP** |
+| **Site**        | **Stagiaires** | **Salariés** | **Téléphones IP** |
 | ------------------ | -------------------: | -----------------: | -------------------: |
-| 🗼 Paris           |                   70 |                 20 |                    8 |
-| 🌊 Rennes          |                   24 |                 12 |                    4 |
-| ☀️ Pointe-à-Pitre  |                   15 |                  7 |                    2 |
-| 🏢 Limoges (siège) |                   96 |                 30 |                   12 |
+| Paris           |                   70 |                 20 |                    8 |
+| Rennes          |                   24 |                 12 |                    4 |
+| Pointe-à-Pitre  |                   15 |                  7 |                    2 |
+| Limoges (siège) |                   96 |                 30 |                   12 |
 
 
 ### Objectifs techniques
