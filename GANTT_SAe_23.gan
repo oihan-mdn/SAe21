@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-05-20" view-index="0" gantt-divider-location="285" resource-divider-location="300" version="3.3.3316" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="-1"/>
+        <field id="tpd3" name="Nom" width="162" order="0"/>
+        <field id="tpd4" name="Date de début" width="61" order="1"/>
+        <field id="tpd5" name="Date de fin" width="61" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[4,0,3,1,2]]></timeline>
+        <option id="color.recent"><![CDATA[#0099ff #cc33ff #ff9900 #cc0000 #cc9900]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="203" order="0"/>
+        <field id="1" name="Rôle par défaut" width="93" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="44d55431619249258268979eb341cd17" name="Présentation SAe 21" color="#ff9900" meeting="false" start="2025-05-21" duration="1" complete="0" expand="true">
+            <depend id="1" type="2" difference="8" hardness="Strong"/>
+        </task>
+        <task id="1" uid="6215efeffa24495db7b5cacd598d3611" name="1ère séance : Packet tracert + trello + gantt + schéma réseau" color="#ff9900" meeting="false" start="2025-06-03" duration="1" complete="0" expand="true">
+            <depend id="2" type="2" difference="6" hardness="Strong"/>
+        </task>
+        <task id="2" uid="4b9939cd62a64693ac601d87bfdfb21e" name="2ème séance : VM + Mise en place architecture réseau" color="#ff9900" meeting="false" start="2025-06-12" duration="1" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="aa55c3dae0b94b3a9250204e85335825" name="3ème séance : Test salle de TP + rapport technique" color="#ff9900" meeting="false" start="2025-06-13" duration="1" complete="0" expand="true">
+            <depend id="4" type="2" difference="2" hardness="Strong"/>
+        </task>
+        <task id="4" uid="e367fb85697e4debb8a58c7d56d2a1d0" name="4ème séance : finalisation test + rapport technique et présentation" color="#ff9900" meeting="false" start="2025-06-18" duration="1" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="a34fb5927ff9438f97f26024f913706a" name="Présentation finale" color="#cc0000" meeting="true" start="2025-06-19" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Sarah Perez" function="1" contacts="sarah.perez.iut@gmail.com" phone=""/>
+        <resource id="1" name="Hugo Diniz" function="1" contacts="hugo.diniz.iut@gmail.com" phone=""/>
+        <resource id="2" name="Timéo Champigny" function="1" contacts="timeo.champigny.iut@gmail.com" phone=""/>
+        <resource id="3" name="Oihan Martin dit Neuville" function="1" contacts="oihan.martinditneuville.iut@gmail.com" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="3" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="2" resource-id="0" function="1" responsible="false" load="90.0"/>
+        <allocation task-id="0" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="3" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="1" function="1" responsible="false" load="90.0"/>
+        <allocation task-id="0" resource-id="2" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="3" resource-id="2" function="1" responsible="false" load="90.0"/>
+        <allocation task-id="5" resource-id="2" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="2" resource-id="2" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="3" resource-id="3" function="1" responsible="false" load="90.0"/>
+        <allocation task-id="5" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="3" function="1" responsible="false" load="80.0"/>
+        <allocation task-id="2" resource-id="3" function="1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Etudiant"/>
+    </roles>
+</project>
