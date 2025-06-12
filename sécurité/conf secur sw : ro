@@ -14,7 +14,7 @@ login
 exit
 
 Mot de passe VTY + SSH + login local
-username admin privilege 15 secret MonMdpAdmin
+username admin privilege 15 secret evaltp
 line vty 0 4
 login local
 transport input ssh
