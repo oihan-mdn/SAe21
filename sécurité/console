@@ -1,0 +1,6 @@
+== SECURITY SETTINGS ==
+
+line console 0
+password MonMdpConsole
+login
+exit
