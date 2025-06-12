@@ -1,3 +1,5 @@
-enable
-configure terminal
-enable secret oihantimeo
+== SECURITY SETTINGS ==
+
+R1> enable
+R1# conf t
+R1(config)# enable secret oihantimeo
