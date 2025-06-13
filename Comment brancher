@@ -1,0 +1,31 @@
+Port du mur pour les PCs:
+35 Routeur 1 / switch 1
+42 Routeur 2 / switch 2
+44 Routeur 3 / Switch 3
+
+Routeur 1
+Gig0/0/1 vers switch 1 port fa0/24
+Gig0/0/0 vers Routeur 2 port Gig0/0/0
+Gig0/0/2 vers Routeur 3 port Gig0/0/2
+
+Routeur 2
+Gig0/0/0 vers Routeur 1 port Gig0/0/0
+Gig0/0/1 vers Switch 2 port fa0/24
+Gig0/0/2 vers Routeur 3 port Gig0/0/0
+
+Routeur 3
+Gig0/0/0 vers Routeur 2 port Gig0/0/2
+Gig0/0/2 vers Routeur 1 port Gig0/0/2
+Gig0/0/1 vers Switch 3 port fa0/24
+
+Pour utilisation
+Switch 1 :
+Port fa0/1 vers baie port 35
+Port fa0/2 vers baie port 42
+Port fa0/3 vers baie port 44
+
+Switch 3 :
+Port fa0/1 vers baie port 48
+Port fa0/2 vers baie port 50
+Port fa0/3 vers baie port 55
+
