@@ -1,0 +1,42 @@
+# Fichier : /etc/dhcp/dhcpd.conf
+
+authoritative;
+
+# DNS commun à tous
+option domain-name-servers 192.168.100.2;
+
+# VLAN10-gauche
+subnet 192.168.10.0 netmask 255.255.255.0 {
+  range 192.168.10.10 192.168.10.29;
+  option routers 192.168.10.1;
+}
+
+# VLAN10-droite
+subnet 192.168.110.0 netmask 255.255.255.0 {
+  range 192.168.110.10 192.168.110.29;
+  option routers 192.168.110.1;
+}
+
+# VLAN20-gauche
+subnet 192.168.20.0 netmask 255.255.255.0 {
+  range 192.168.20.10 192.168.20.29;
+  option routers 192.168.20.1;
+}
+
+# VLAN20-droite
+subnet 192.168.120.0 netmask 255.255.255.0 {
+  range 192.168.120.10 192.168.120.29;
+  option routers 192.168.120.1;
+}
+
+# VLAN30-gauche
+subnet 192.168.30.0 netmask 255.255.255.0 {
+  range 192.168.30.10 192.168.30.29;
+  option routers 192.168.30.1;
+}
+
+# VLAN30-droite
+subnet 192.168.130.0 netmask 255.255.255.0 {
+  range 192.168.130.10 192.168.130.29;
+  option routers 192.168.130.1;
+}
