@@ -62,3 +62,16 @@ L’entreprise est répartie sur 4 sites en France :
 
 ## Contenu du dépôt
 
+| **Action**                        | **Commande**                                                                      |
+| --------------------------------- | --------------------------------------------------------------------------------- |
+| Créer un VLAN                     | `conf t<br>vlan X<br>name VLAN_NAME`                                              |
+| Associer un port à un VLAN        | `conf t<br>interface fa0/X<br>switchport mode access<br>switchport access vlan X` |
+| Activer le routage inter-VLAN     | `conf t<br>ip routing`                                                            |
+| Configurer une interface routeur  | `conf t<br>interface g0/0.X<br>encapsulation dot1Q X<br>ip address IP MASK`       |
+| Ajouter une route statique        | `conf t<br>ip route DESTINATION MASK NEXT_HOP`                                    |
+| Configurer DHCP sur serveur Linux | `sudo nano /etc/dhcp/dhcpd.conf`                                                  |
+| Redémarrer le service DHCP        | `sudo systemctl restart isc-dhcp-server`                                          |
+| Vérifier le routage               | `show ip route`                                                                   |
+| Tester la connectivité (ping)     | `ping IP_ADDRESS`                                                                 |
+| Connexion SSH                     | `ssh user@IP_ADDRESS`                                                             |
+
