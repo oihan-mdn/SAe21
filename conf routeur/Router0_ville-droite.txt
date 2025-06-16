@@ -97,3 +97,30 @@ line vty 0 4
 !
 end
 
+
+interface GigabitEthernet0/1.10
+ encapsulation dot1Q 10
+ ip address 192.168.110.1 255.255.255.0
+ ip helper-address 192.168.100.2
+
+interface GigabitEthernet0/1.20
+ encapsulation dot1Q 20
+ ip address 192.168.120.1 255.255.255.0
+ ip helper-address 192.168.100.2
+
+interface GigabitEthernet0/1.30
+ encapsulation dot1Q 30
+ ip address 192.168.130.1 255.255.255.0
+ ip helper-address 192.168.100.2
+
+interface GigabitEthernet0/1
+no shutdown
+
+interface GigabitEthernet0/2
+ ip address 192.168.105.10 255.255.255.252
+
+ip classless
+ip route 192.168.100.0 255.255.255.0 192.168.105.5 
+ip route 192.168.10.0 255.255.255.0 192.168.105.9 
+ip route 192.168.20.0 255.255.255.0 192.168.105.9 
+ip route 192.168.30.0 255.255.255.0 192.168.105.9 
