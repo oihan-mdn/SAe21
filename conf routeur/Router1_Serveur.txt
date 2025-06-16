@@ -92,3 +92,23 @@ line vty 0 4
 !
 end
 
+
+interface GigabitEthernet0/0
+ ip address 192.168.105.1 255.255.255.252
+ no shutdown
+
+interface GigabitEthernet0/1
+ ip address 192.168.100.1 255.255.255.0
+ no shutdown
+
+interface GigabitEthernet0/2
+ ip address 192.168.105.5 255.255.255.252
+ no shutdown
+
+
+ip route 192.168.10.0 255.255.255.0 192.168.105.2 
+ip route 192.168.20.0 255.255.255.0 192.168.105.2 
+ip route 192.168.30.0 255.255.255.0 192.168.105.2 
+ip route 192.168.110.0 255.255.255.0 192.168.105.6 
+ip route 192.168.120.0 255.255.255.0 192.168.105.6 
+ip route 192.168.130.0 255.255.255.0 192.168.105.6 
